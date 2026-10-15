@@ -2,35 +2,29 @@ bu dosyaya wep projesi dersi boyunca hafta hafta yapayzekaya yazdığımız prom
 ve bize verdiği cevapları ve bu cevaplardan nasıl faydalancağımızı not edeceğiz
 16 ekim görevi 
 
-AI'A SORDUĞUM SORU
+# 16 Ekim Görevi
 
-Web projem için insanların günlük hayatta veya eğitim hayatında karşılaştıkları resmî işlemleri daha kolay öğrenebilecekleri
-bir web sitesi yapmak istiyorum. Projemin adı İşlem Rehberi. Bu web sitesinde hangi özellikler
-bulunmalı ve projeyi HTML, CSS ve JavaScript kullanarak nasıl geliştirebilirim?
+## 1. AI'a Sorduğum Sorular
 
- 2. VERDİĞİ CEVAP
+**1. Soru:** İşlem Rehberi adlı web projemde hangi özellikler bulunmalı?
 
-Yapay zekâ, İşlem Rehberi adlı web sitesinin kullanıcıların farklı işlemleri adım adım öğrenmelerini sağlayan
-bir bilgilendirme sistemi olabileceğini belirtti.
+**2. Soru:** Kullanıcıların aradıkları işlemleri kolayca bulabilmeleri için neler yapabilirim?
 
-Sitede şu konular bulunabilir:
+**3. Soru:** İşlem Rehberi web sitesini hangi yazılım dilleriyle geliştirebilirim?
 
-- Burs başvurusu
-- Öğrenci belgesi alma
-- İş başvurusu
-- Pasaport başvurusu
-- E-Devlet işlemleri
-- Üniversite kayıt işlemleri
+## 2. Yapay Zekânın Verdiği Cevaplar
 
-Her işlem için gerekli belgeler, başvuru şartları, işlem basamakları ve resmî bilgi kaynakları ayrı bölümlerde gösterilebilir. 
-Kullanıcıların aradıkları işlemi kolayca bulabilmeleri için arama çubuğu ve kategori filtreleri eklenebilir.
+**1. Cevap:** Sitede burs başvurusu, öğrenci belgesi alma ve üniversite kayıtları gibi konular bulunabilir. Her işlem için
+gerekli belgeler ve işlem basamakları anlatılabilir.
 
-Web sitesinin tasarımı HTML ile oluşturulabilir, CSS ile düzenlenebilir ve JavaScript ile arama ve filtreleme gibi özellikler eklenebilir.
+**2. Cevap:** Kullanıcıların aradıkları konuları kolayca bulabilmeleri için arama çubuğu, kategori bölümleri ve işlem kartları eklenebilir.
 
- 3. BU CEVABI NASIL KULLANDIM?
+**3. Cevap:** HTML ile sitenin yapısı, CSS ile tasarımı ve JavaScript ile arama ve filtreleme gibi özellikler geliştirilebilir.
 
-Yapay zekânın verdiği cevaplardan yararlanarak İşlem Rehberi projemin amacını ve içeriğini belirledim. Kullanıcıların aradıkları işlemi 
-kolayca bulabilmeleri için arama çubuğu ve kategori filtreleri eklemeyi planladım.
+## 3. Bu Cevaplardan Nasıl Faydalandım?
 
-Ayrıca işlemleri adım adım anlatan rehberler oluşturmaya karar verdim. Projemi HTML, CSS ve JavaScript kullanarak geliştirmek için bu
-önerilerden yararlandım. Böylece projemin temel özelliklerini belirleyerek geliştirme sürecine daha planlı bir şekilde devam edebildim.
+**1. Cevaptan faydalanmam:** Sitemde bulunacak işlem konularını ve rehber içeriklerini belirledim.
+
+**2. Cevaptan faydalanmam:** Kullanıcıların işlemlere daha kolay ulaşabilmesi için arama çubuğu ve kategori bölümleri eklemeyi planladım.
+
+**3. Cevaptan faydalanmam:** Web sitemin prototipini HTML, CSS ve JavaScript kullanarak hazırladım.
