@@ -1,8 +1,6 @@
 İşlem Rehberi
 
 İşlem Rehberi, günlük ve resmî işlemler hakkında gerekli belgeleri, kimlerin başvurabileceğini ve izlenecek adımları tek bir yerde anlaşılır biçimde sunmayı amaçlayan bir web projesidir.
-Proje durumu: İlk prototip
-Teknolojiler: HTML, CSS, JavaScript
 
 Projenin Amacı
 
