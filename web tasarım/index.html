@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="İşlem Rehberi: Burs başvurusu, öğrenci belgesi, iş başvurusu, pasaport, e-devlet ve üniversite kayıt işlemleri için adım adım rehber.">
+  <title>İşlem Rehberi | Resmi ve Günlük İşlemler İçin Adım Adım Rehber</title>
+
+  <!-- Google Fonts: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Ana Stil Dosyası -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= Üst Gezinme Çubuğu (Header) ================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo" id="homeLogo" aria-label="İşlem Rehberi Ana Sayfa">
+        <div class="logo-icon-wrap">
+          <i class="fa-solid fa-compass"></i>
+        </div>
+        <div class="logo-text">
+          <span class="logo-title">İşlem Rehberi</span>
+          <span class="logo-subtitle">Resmi İşlem Portalı</span>
+        </div>
+      </a>
+
+      <div class="header-actions">
+        <button id="themeToggleBtn" class="btn-icon" aria-label="Karanlık/Aydınlık Tema Değiştir" title="Tema Değiştir">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= Hero / Karşılama Bölümü ================= -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="hero-badge">
+        <i class="fa-solid fa-shield-halved"></i> Doğrulanmış Resmî Bilgi Rehberi
+      </div>
+      <h1 class="hero-title">Tüm İşlemleriniz İçin Adım Adım Yol Haritası</h1>
+      <p class="hero-desc">
+        Burs, öğrenci belgesi, iş başvurusu, pasaport ve e-Devlet gibi tüm resmi süreçlerde gereken belgeler, kimlerin başvurabileceği ve adım adım yönergeler tek platformda.
+      </p>
+
+      <!-- Arama Kutusu -->
+      <div class="search-wrapper">
+        <div class="search-input-box">
+          <i class="fa-solid fa-magnifying-glass search-icon"></i>
+          <input 
+            type="text" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="İşlem adı, belge veya kurum arayın... (Örn: Burs, Pasaport, İŞKUR)"
+            autocomplete="off"
+          >
+          <button id="clearSearchBtn" class="search-clear-btn" aria-label="Aramayı Temizle" title="Temizle">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <span class="search-shortcut-badge" title="Aramaya odaklanmak için '/' tuşuna basın">/</span>
+        </div>
+
+        <!-- Hızlı Arama Etiketleri -->
+        <div class="quick-tags">
+          <span class="quick-tags-label">Hızlı Arama:</span>
+          <button class="tag-btn" data-search="Burs">KYK Bursu</button>
+          <button class="tag-btn" data-search="Öğrenci Belgesi">Öğrenci Belgesi</button>
+          <button class="tag-btn" data-search="Pasaport">Pasaport</button>
+          <button class="tag-btn" data-search="İş">İş Başvurusu</button>
+          <button class="tag-btn" data-search="E-Devlet">e-Devlet Şifresi</button>
+          <button class="tag-btn" data-search="Kayıt">Üniversite Kayıt</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Filtre Bölümü ================= -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-bar">
+        <!-- Kategori Butonları -->
+        <div class="category-tabs" id="categoryTabs">
+          <!-- JS dinamik olarak dolduracak -->
+        </div>
+
+        <!-- Sonuç Sayacı ve Temizle Butonu -->
+        <div class="filter-meta">
+          <span class="results-count" id="resultsCount">6 rehber listeleniyor</span>
+          <button class="reset-filter-btn" id="resetFilterBtn">Filtreleri Sıfırla</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= Rehber Kartları Grid Alanı ================= -->
+  <main class="guides-section">
+    <div class="container">
+      <!-- Kartlar Listesi -->
+      <div class="guides-grid" id="guidesGrid">
+        <!-- JS ile dinamik olarak rehber kartları eklenecek -->
+      </div>
+
+      <!-- Arama Sonucu Bulunamadı (Boş Durum) -->
+      <div class="empty-state" id="emptyState">
+        <i class="fa-solid fa-magnifying-glass empty-state-icon"></i>
+        <h3 class="empty-state-title">Aramanıza Uygun Rehber Bulunamadı</h3>
+        <p class="empty-state-desc">
+          Farklı bir arama terimi deneyebilir veya kategori filtrelerini sıfırlayabilirsiniz.
+        </p>
+        <button class="btn-clear-all" id="emptyClearBtn">Tüm Rehberleri Göster</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ================= Rehber Detay Modalı (Modal) ================= -->
+  <div class="modal-overlay" id="guideModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <!-- Modal Üst Alanı -->
+      <div class="modal-header">
+        <div class="modal-header-left">
+          <div class="modal-icon-badge" id="modalIcon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+          <div class="modal-title-group">
+            <span class="modal-category-tag" id="modalCategoryTag">Kategori</span>
+            <h2 class="modal-title" id="modalTitle">Rehber Başlığı</h2>
+            <div class="modal-quick-meta">
+              <span id="modalEstimatedTime"><i class="fa-regular fa-clock"></i> 20 Dakika</span>
+              <span id="modalCost"><i class="fa-solid fa-tag"></i> Ücretsiz</span>
+            </div>
+          </div>
+        </div>
+        <button class="modal-close-btn" id="modalCloseBtn" aria-label="Pencereyi Kapat" title="Kapat (ESC)">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Modal İçeriği (İstenen 4 Ana Bölüm) -->
+      <div class="modal-body" id="modalBody">
+        
+        <!-- Bölüm 1: Kimler Başvurabilir -->
+        <section class="guide-section-block">
+          <h3 class="section-block-title">
+            <i class="fa-solid fa-users"></i> Kimler Başvurabilir? (Uygunluk Koşulları)
+          </h3>
+          <ul class="eligibility-list" id="modalEligibilityList">
+            <!-- JS dolduracak -->
+          </ul>
+        </section>
+
+        <!-- Bölüm 2: Gerekli Belgeler (İnteraktif Kontrol Listesi) -->
+        <section class="guide-section-block">
+          <h3 class="section-block-title">
+            <i class="fa-solid fa-folder-open"></i> Gerekli Belgeler & Evrak Listesi
+          </h3>
+          
+          <!-- Evrak Hazırlık İlerlemesi -->
+          <div class="doc-progress-container">
+            <div class="doc-progress-header">
+              <span>Belge Hazırlık Durumu:</span>
+              <span id="docProgressText">0 / 0 Tamamlandı</span>
+            </div>
+            <div class="doc-progress-bar-bg">
+              <div class="doc-progress-bar-fill" id="docProgressBar"></div>
+            </div>
+          </div>
+
+          <ul class="documents-list" id="modalDocumentsList">
+            <!-- JS dolduracak -->
+          </ul>
+        </section>
+
+        <!-- Bölüm 3: İşlem Adımları (Stepper) -->
+        <section class="guide-section-block">
+          <h3 class="section-block-title">
+            <i class="fa-solid fa-list-ol"></i> Adım Adım İşlem Süreci
+          </h3>
+          <div class="steps-timeline" id="modalStepsTimeline">
+            <!-- JS dolduracak -->
+          </div>
+        </section>
+
+        <!-- Bölüm 4: Resmî Kaynak Bağlantısı -->
+        <section class="official-source-card">
+          <div class="source-info">
+            <div class="source-badge-icon">
+              <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <div class="source-details">
+              <span class="source-tag">
+                <i class="fa-solid fa-shield"></i> Resmî Devlet & Kurum Kaynağı
+              </span>
+              <h4 class="source-title" id="modalSourceTitle">Kurum Başlığı</h4>
+              <span class="source-platform" id="modalSourcePlatform">Resmi Portalı</span>
+            </div>
+          </div>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn-official-link" id="modalSourceLink">
+            <span>Resmî Başvuru Sayfasına Git</span>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </section>
+
+      </div>
+
+      <!-- Modal Alt Çubuğu (Footer) -->
+      <div class="modal-footer">
+        <div class="modal-footer-actions">
+          <button class="btn-secondary" id="modalPrintBtn" title="Bu rehberi yazdır veya PDF olarak kaydet">
+            <i class="fa-solid fa-print"></i> Yazdır / PDF
+          </button>
+          <button class="btn-secondary" id="modalShareBtn" title="Bu rehberin bağlantısını kopyala">
+            <i class="fa-solid fa-share-nodes"></i> Paylaş
+          </button>
+        </div>
+        <button class="btn-close-bottom" id="modalCloseBottomBtn">Kapat</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= Toast Bildirimi ================= -->
+  <div class="toast" id="toast">
+    <i class="fa-solid fa-circle-info"></i>
+    <span id="toastMessage">Bağlantı panoya kopyalandı!</span>
+  </div>
+
+  <!-- ================= Alt Bilgi (Footer) ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo">
+            <div class="logo-icon-wrap" style="width: 32px; height: 32px; font-size: 16px;">
+              <i class="fa-solid fa-compass"></i>
+            </div>
+            <span class="logo-title" style="font-size: 1.1rem;">İşlem Rehberi</span>
+          </div>
+          <p>
+            Vatandaşların kamu ve eğitim işlemlerini hızlı, güvenilir ve eksiksiz bir şekilde tamamlamasını sağlayan bağımsız rehber platformu.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#burs-basvurusu" class="footer-quick-link" data-guide-id="burs-basvurusu">Burs Rehberi</a>
+          <a href="#ogrenci-belgesi-alma" class="footer-quick-link" data-guide-id="ogrenci-belgesi-alma">Öğrenci Belgesi</a>
+          <a href="#pasaport-basvurusu" class="footer-quick-link" data-guide-id="pasaport-basvurusu">Pasaport Başvurusu</a>
+          <a href="#e-devlet-islemleri" class="footer-quick-link" data-guide-id="e-devlet-islemleri">E-Devlet Rehberi</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 İşlem Rehberi. Tüm hakları saklıdır.</span>
+        <span>Bu sitede yer alan bağlantılar resmî devlet portallarına yönlendirmektedir.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Dosyaları -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
