@@ -27,4 +27,77 @@ gerekli belgeler ve işlem basamakları anlatılabilir.
 
 3. Cevap: HTML ile sitenin yapısı, CSS ile tasarımı ve JavaScript ile arama ve filtreleme gibi özellikler geliştirilebilir.
 
-4.cevap:Bölümlerin konularını yazılımsal olarak oluşturdum index.html,css,js olarak oluşturdum.
+4.cevap:İşlem Rehberi web projesinin ilk çalışan sürümü planlandı ve saf HTML, CSS ve JavaScript (Vanilla JS) dilleri kullanılarak belirtilen yerel çalışma klasörünüzde (c:\Users\muham\OneDrive\Desktop\web tasarım) oluşturuldu.
+
+📁 Oluşturulan Proje Dosyaları
+
+Projeniz doğrudan tarayıcı üzerinden çalışacak şekilde ve hiçbir harici derleyici/sunucu bağımlılığı olmadan hazırlanmıştır:
+
+index.html – Ana sayfa yapısı, arama çubuğu, hızlı etiketler, kategori filtreleri, rehber kartları gridi ve detay modal şablonu.
+css/style.css – Modern, duyarlı (responsive), yumuşak geçiş efektlerine sahip stil dosyası ve Karanlık/Aydınlık tema desteği.
+js/data.js – 6 adet rehberin eksiksiz içerik, belge, adım ve resmî bağlantı veri tabanı.
+js/app.js – Canlı arama, kategori filtreleme, detay modalı yönetimi, evrak kontrol listesi (checklist) kaydı ve tema değiştirici.
+README.md – Projenin mimari özeti, kullanım kılavuzu ve özellikleri.
+📋 Hazırlanan 6 Temel Rehber ve Yapısı
+
+Belirttiğiniz 6 rehberin tamamı eklenmiş olup, her birinin içerisinde istediğiniz 4 ana bölüm ayrı kutular halinde yer almaktadır:
+
+Burs Başvurusu (KYK ve Vakıf Bursları):
+
+Kimler Başvurabilir: Örgün ön lisans, lisans, lisansüstü öğrencileri, başarı kriterini sağlayan ve adli sicil kaydı bulunmayan adaylar.
+Gerekli Belgeler: e-Devlet öğrenci belgesi, transkript, vukuatlı nüfus kayıt örneği, aile gelir beyanı, ikametgah belgesi, IBAN bilgisi.
+İşlem Adımları: Tarih takibi, e-Devlet GSB portal başvurusu, bilgi doğrulaması, taahhütname onayı ve Genç Bankkart teslimi.
+Resmî Kaynak Bağlantısı: GSB / e-Devlet Burs & Öğrenim Kredisi Başvurusu
+.
+
+Öğrenci Belgesi Alma (Barkodlu e-Devlet):
+
+Kimler Başvurabilir: YÖK veya MEB'e bağlı tüm aktif/kayıtlı üniversite ve okul öğrencileri veya velileri.
+Gerekli Belgeler: T.C. Kimlik Kartı ve e-Devlet şifresi (veya internet bankacılığı girişi).
+İşlem Adımları: e-Devlet girişi, arama alanına 'Öğrenci Belgesi' yazılması, program seçimi ve barkodlu PDF indirme.
+Resmî Kaynak Bağlantısı: YÖK Öğrenci Belgesi Sorgulama Kapısı
+.
+
+İş Başvurusu (Özgeçmiş, İŞKUR ve Kariyer Portalları):
+
+Kimler Başvurabilir: 15 yaşını doldurmuş tüm T.C. vatandaşları, kamu ilanlarında KPSS şartını sağlayanlar ve özel sektör adayları.
+Gerekli Belgeler: Güncel özgeçmiş (CV), barkodlu mezuniyet belgesi, adli sicil kaydı, SGK dökümü, askerlik durum belgesi.
+İşlem Adımları: İŞKUR iş arayan kaydı, hedefe yönelik CV hazırlığı, Kariyer Kapısı/özel platform başvurusu, mülakat süreci ve evrak teslimi.
+Resmî Kaynak Bağlantısı: İŞKUR E-Şube Portalı
+.
+
+Pasaport Başvurusu (Bordo / Yeşil Pasaport):
+
+Kimler Başvurabilir: Tüm T.C. vatandaşları, kadro/kıdem şartını sağlayan memurlar (Yeşil Pasaport) ve 25 yaş altı öğrenciler (harçsız pasaport).
+Gerekli Belgeler: T.C. Kimlik Kartı, 1 adet son 6 aya ait biyometrik fotoğraf, harç/defter dekontu, eski pasaport (varsa), öğrenci belgesi.
+İşlem Adımları: Harç ve defter bedeli ödemesi, NVİ randevusu alma, parmak izi/imza verme ve PTT kargo takibi.
+Resmî Kaynak Bağlantısı: İçişleri Bakanlığı NVİ Randevu Sistemi
+.
+
+E-Devlet İşlemleri (Şifre Alma, Giriş ve Temel Hizmetler):
+
+Kimler Başvurabilir: 15 yaşını doldurmuş T.C. vatandaşları, Mavi Kartlılar ve Türkiye'de ikamet eden yabancılar.
+Gerekli Belgeler: Fotoğraflı T.C. Kimlik Kartı, aktif cep telefonu hattı (veya internet bankacılığı hesabı).
+İşlem Adımları: PTT veya internet bankacılığından ilk şifre, şifre değişikliği, telefon/e-posta doğrulaması, iki aşamalı giriş aktivasyonu.
+Resmî Kaynak Bağlantısı: Türkiye Cumhuriyeti e-Devlet Kapısı
+.
+
+Üniversite Kayıt İşlemleri (YKS E-Kayıt ve Şahsen Kayıt):
+
+Kimler Başvurabilir: YKS, DGS veya yatay geçiş ile bir üniversite programına yerleşen tüm adaylar.
+Gerekli Belgeler: e-Devlet şifresi, lise diploması, T.C. Kimlik Kartı, YKS sonuç belgesi, (bölüme göre) sağlık raporu ve harç dekontu.
+İşlem Adımları: Üniversite duyuru incelemesi, e-Devlet üzerinden Üniversite E-Kayıt yapılması, 'EVET' onayı, barkodlu kayıt belgesi çıktısı ve OBS (Öğrenci Bilgi Sistemi) ders kaydı.
+Resmî Kaynak Bağlantısı: YÖK Üniversite E-Kayıt Portalı
+.
+🛠️ Ana Sayfa Arayüz ve Fonksiyonel Özellikleri
+Canlı Arama (Search): Türkçe karakter duyarlıdır (ı-i, ğ-g, ş-s vb.). Rehber başlıklarında, açıklamalarda, gerekli evrak isimlerinde ve işlem adımlarında anlık arama yapar. Klavye üzerinden / veya Ctrl + K tuşlarıyla doğrudan arama kutusuna odaklanılabilir.
+Kategori Filtreleme: Tümü, Eğitim & Öğrenci, Kamu & E-Devlet, Kariyer & İstihdam ve Seyahat & Kimlik sekmeleri tıklanarak anında filtrelenebilir. Her kategorideki rehber sayısı buton üzerinde rozet olarak gösterilir.
+Hızlı Etiketler: Arama çubuğunun hemen altında yer alan popüler etiketlere (KYK Bursu, Pasaport, e-Devlet Şifresi vb.) tıklanarak tek tıkla arama yapılabilir.
+İnteraktif Evrak Kontrol Listesi: Bir rehberi açtığınızda gerekli belgelerin yanındaki onay kutularını işaretleyebilirsiniz. Sistem dinamik olarak bir ilerleme çubuğu (%60 Tamamlandı gibi) gösterir ve işaretlemelerinizi tarayıcınızın localStorage hafızasında saklar.
+Resmî Kaynak Butonları: Her rehberin altında ilgili resmî devlet sayfasına açılan güvenli ve doğrulanmış doğrudan bağlantı butonu bulunur.
+Karanlık / Aydınlık Tema (Dark Mode): Sağ üst köşedeki ay/güneş butonuyla tema anında değiştirilebilir ve tercihiniz kaydedilir.
+Yazdır / PDF: Modal penceresinde yer alan "Yazdır / PDF" butonu ile rehber sayfası yazdırmaya uygun formatta döküm verecek şekilde stilize edilmiştir.
+Doğrudan Bağlantı (Deep Linking): Sayfa adresinin sonuna #pasaport-basvurusu gibi rehber kimliği eklendiğinde sayfa doğrudan o rehberin detayını açar ve "Paylaş" butonu ile bağlantı kopyalanabilir.
+🚀 Nasıl Görüntüleyebilirsiniz?
+
+Bilgisayarınızda dosya yöneticisiyle c:\Users\muham\OneDrive\Desktop\web tasarım klasörüne gidip index.html dosyasına çift tıklayarak istediğiniz tarayıcıda (Chrome, Edge, Opera, Firefox vb.) hemen test edebilirsiniz.
