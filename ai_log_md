@@ -12,6 +12,12 @@ ve bize verdiği cevapları ve bu cevaplardan nasıl faydalancağımızı not ed
 
 3. Soru: İşlem Rehberi web sitesini hangi yazılım dilleriyle geliştirebilirim?
 
+4.İşlem Rehberi web projesinin ilk çalışan sürümünü planla ve HTML, CSS, JavaScript ile oluşturmaya başla. Seçilen rehberler: Burs başvurusu, Öğrenci belgesi alma,
+İş başvurusu, Pasaport başvurusu, E-Devlet işlemleri, Üniversite kayıt işlemleri. Her rehberde gerekli belgeler, kimler başvurabilir, işlem adımları ve resmî kaynak bağlantısı 
+ayrı bölümler olsun.
+Ana sayfada arama ve kategori filtreleri çalışsın.ve ek olarak sadece bunda arayüz
+olsun temel olarak bu dilleri kullanmanı istiyorum senden sonra bunları belirlediğimiz yerel dosyaya atmanı istiyorum senden 
+
  Yapay Zekânın Verdiği Cevaplar
 
 1. Cevap: Sitede burs başvurusu, öğrenci belgesi alma ve üniversite kayıtları gibi konular bulunabilir. Her işlem için
@@ -21,10 +27,4 @@ gerekli belgeler ve işlem basamakları anlatılabilir.
 
 3. Cevap: HTML ile sitenin yapısı, CSS ile tasarımı ve JavaScript ile arama ve filtreleme gibi özellikler geliştirilebilir.
 
-  Bu Cevaplardan Nasıl Faydalandım?
-
-1. Cevaptan faydalanmam: Sitemde bulunacak işlem konularını ve rehber içeriklerini belirledim.
-
-2. Cevaptan faydalanmam: Kullanıcıların işlemlere daha kolay ulaşabilmesi için arama çubuğu ve kategori bölümleri eklemeyi planladım.
-
-3. Cevaptan faydalanmam: Web sitemin prototipini HTML, CSS ve JavaScript kullanarak hazırladım.
+4.cevap:Bölümlerin konularını yazılımsal olarak oluşturdum index.html,css,js olarak oluşturdum.
